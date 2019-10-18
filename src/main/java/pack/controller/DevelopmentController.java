@@ -9,7 +9,7 @@ public class DevelopmentController {
 	
 	@RequestMapping("test")
 	public String test() {
-		return "admin/memberManage";
+		return "clientBoardCreate";
 	}
 	
 	@RequestMapping("a")

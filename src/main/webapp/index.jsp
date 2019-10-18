@@ -12,7 +12,7 @@
 <a href="a">비로그인 메인화면 가기</a> <br>
 <a href="b">관리자 페이지 공지사항 바로 가기</a> <br>
 <a href="c">관리자 페이지 관리자 계정 관리 바로 가기</a> <br>
-<a href="d">사용자 게시판 바로 가기</a>
+<a href="clientBoardList/study">사용자 게시판 바로 가기</a>
 
 <br><br><br>
 <p>DevelopmentController 제작용 - 안원석</p>
