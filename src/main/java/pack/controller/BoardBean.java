@@ -1,5 +1,7 @@
 package pack.controller;
 
+import java.util.Calendar;
+
 public class BoardBean {
 	private String b_num,b_con,b_title,m_name,b_content,b_mno,b_ip,b_sdate,b_udate,b_views,c_num,c_name, 
 	a_num,a_email,a_name,a_phone1,a_phone2,a_phone3,a_password,m_num,m_email,m_password,
@@ -335,6 +337,25 @@ public class BoardBean {
 		this.b_views = b_views;
 	}
 
+	public void setB_sdate() {
+		Calendar calendar = Calendar.getInstance();
+		int year = calendar.get(Calendar.YEAR);
+		int month = calendar.get(Calendar.MONTH);
+		int day= calendar.get(Calendar.DATE);
+		this.b_sdate= year +"-" + month + "-" + day;
+		
+		
+	} 
+	
+	public void setR_sdate() {
+		Calendar calendar = Calendar.getInstance();
+		int year = calendar.get(Calendar.YEAR);
+		int month = calendar.get(Calendar.MONTH);
+		int day= calendar.get(Calendar.DATE);
+		this.r_sdate= year +"-" + month + "-" + day;
+		
+		
+	} 
 
 	}
 

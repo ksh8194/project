@@ -24,12 +24,19 @@ public ModelAndView ClientCreateProcess() {
 }
 
 @RequestMapping(value = "clientBoardList/clientBoardCreate", method = RequestMethod.POST)
-public ModelAndView ClientCreateProcess2() {
+public String ClientCreateProcess2(BoardBean bean) {
+	bean.setB_sdate();
+	bean.setB_udate("2019-01-01");
+	bean.setB_mno("1");
+	bean.setB_con("1");
+	bean.setB_views("0");
 	
-	ModelAndView mv = new ModelAndView();
-	mv.setViewName("clientBoardList");
-	
-	return mv;
+		
+	 if(sangpumAnnoInter.boardWrite(bean)>0) {
+		return "redirect:/clientBoardList";
+	}else {
+		return "redirect:/error";
+	}
 }
 
 }

@@ -39,7 +39,7 @@
 							<c:forEach var="b" items="${data}">
 								<tr>
 									<td style="text-align: center">${b.b_num}</td>
-									<td><a href="#">${b.b_title}</a></td>
+									<td><a href="clientBoardView?num=${b.b_num}">${b.b_title}</a></td>
 									<td style="text-align: center">${b.m_name}</td>
 									<td style="text-align: center">${b.b_sdate}</td>
 									<td style="text-align: center">${b.b_views}</td>
